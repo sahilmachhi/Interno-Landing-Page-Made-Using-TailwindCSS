@@ -3,3 +3,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply font-poppins text-[20px] bg-main;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply bg-heading_Color font-noto;
+}
+
+p {
+  @apply bg-text_color font-poppins;
+}
+
+h1 {
+  @apply text-[64px] lg:text-[84px] leading-none;
+}
