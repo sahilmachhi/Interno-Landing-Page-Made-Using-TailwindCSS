@@ -6,21 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
+      integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body class="bg-gray-100">
+    <!-- header  -->
+
+    <header class="sticky shadow-xl top-0 bg-white z-30 h-[90px] flex w-full">
+      <nav class="container mx-auto flex justify-between items-center w-full">
+        <div class="logo">
+          <img
+            src="./assets/logo/65bb1bd8cf9330922c3d8af7_interno.svg"
+            alt=""
+          />
+        </div>
+
+        <ul
+          class="h-0 p-0 flex justify-center items-center gap-8 flex-col overflow-hidden bg-white w-full fixed top-[90px] left-0 right-0 border-t lg:flex-row lg:relative lg:top-0 lg:border-t-0 lg:justify-end lg:h-full transition-all duration-300"
+          id="nav-menu"
+        >
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">about</a>
+          </li>
+          <li>
+            <a href="">testimonial</a>
+          </li>
+          <li>
+            <a href="">Our work</a>
+          </li>
+          <li>
+            <a href="">News</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+        </ul>
+
+        <i
+          class="ri-menu-4-line text-black text-4xl lg:hidden"
+          id="nav-btn"
+        ></i>
+      </nav>
+    </header>
     <!-- page wrapper  -->
-    <main class="max-w-[1920px] bg-white mx-auto overflow-hidden">
+    <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
       <!-- hero  -->
       <section
-        class="bg-hero h-[640px] xl:h-[840px] bg-center lg:bg-cover bg-no-repeat bg-fixed xl:rounded-bl-[290px] relative z-20"
+        class="bg-hero h-[640px] xl:h-[100vh] w-full bg-cover bg-center bg-no-repeat bg-fixed xl:rounded-bl-[290px] relative z-20 mx-auto"
       >
-        <div class="container mx-auto">
+        <div
+          class="mx-auto container h-full w-full flex items-center justify-center xl:justify-start"
+        >
           <!-- text  -->
-          <div>test</div>
+          <div
+            class="hero__text flex flex-col items-center text-center xl:text-left xl:items-start justify-center h-full max-w-[500px]"
+          >
+            <h1 class="mb-9">let Your Home Be Unique</h1>
+            <p class="mb-9">
+              There's many passage Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Cum, atque.
+            </p>
+            <button
+              class="mb-9 text-white bg-black px-3 py-4 rounded-[15px] font-poppins"
+            >
+              Get free estimation
+            </button>
+          </div>
         </div>
       </section>
-      <section class="h-[3000px]"></section>
+      <!-- steps  -->
+      <section class="mt-[80px] xl:mt-[200px] relative z-20">
+        <div class="container mx-auto">
+          <!-- grid items  -->
+          <div class="grid grid-cols-1 gap-12 xl:grid-cols-3">
+            <!-- step 1  -->
+
+            <div class="steps__step text-center">
+              <div class="mb-3">
+                <i class="ri-compasses-fill text-[5rem] text-red-600"></i>
+              </div>
+              <h3 class="h3 mb-4">Project planning</h3>
+              <p class="p mb-4 max-w-md">
+                There are many variations of the passage of Lorem, ipsum dolor.
+              </p>
+
+              <a href=""
+                >Read more
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <script type="module" src="/main.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>

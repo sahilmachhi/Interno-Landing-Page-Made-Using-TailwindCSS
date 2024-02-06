@@ -14,13 +14,21 @@ h3,
 h4,
 h5,
 h6 {
-  @apply bg-heading_Color font-noto;
+  @apply text-black font-noto;
 }
 
 p {
-  @apply bg-text_color font-poppins;
+  @apply text-black font-poppins;
 }
 
 h1 {
   @apply text-[64px] lg:text-[84px] leading-none;
+}
+
+.bg-hero {
+  background-image: url(./assets/spacejoy-c0JoR_-2x3E-unsplash.jpg);
+}
+
+.menuOpen {
+  @apply h-[400px] p-9 transition-all duration-300;
 }

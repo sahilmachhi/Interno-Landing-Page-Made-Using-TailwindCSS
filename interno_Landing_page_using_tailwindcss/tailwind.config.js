@@ -7,7 +7,7 @@ export default {
   theme: {
     container: {
       padding: {
-        DEFAULT: "15px",
+        DEFAULT: "50px",
       },
     },
 
@@ -21,9 +21,6 @@ export default {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         noto: ["Noto Serif Display", "serif"],
-      },
-      backgroundImage: {
-        hero: "url(./assets/alberto-castillo-q-mx4mSkK9zeo-unsplash.jpg)"
       },
 
       colors: {
