@@ -13,8 +13,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="swiper-bundle.min.css" />
+
     <script src="./swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
   </head>
   <body class="bg-gray-100">
     <!-- header  -->
@@ -193,17 +194,18 @@
 
       <section class="mt-[80px] xl:mt[200px]">
         <div
-          class="testimonial-bg container mx-auto bg-cyan-200 rounded-[70px]"
+          class="testimonial-bg container mx-auto bg-cyan-200 rounded-[70px] pb-[80px] pt-[66px]"
         >
+          <h2 class="h2 text-center mb-9">What Client says</h2>
           <!-- slider  -->
 
           <div class="w-full">
-            <div class="testimonial__slider swiper">
-              <div class="swiper-wrapper h-[400px]">
+            <div class="testimonial__slider swiper h-[400px]">
+              <div class="swiper-wrapper">
                 <!-- slide 1 -->
                 <div class="swiper-slide">
                   <div
-                    class="testimonial__item w-full max-w-[370px] h-[340px] bg-white rounded-[30px] mx-auto p-9 flex items-center justify-center flex-col gap-[2rem]"
+                    class="testimonial__item w-full max-w-[450px] h-[340px] bg-white rounded-[30px] mx-auto p-9 flex items-center justify-center flex-col gap-[2rem]"
                   >
                     <div
                       class="flex gap-[2rem] justify-center items-center self-start"
@@ -227,7 +229,7 @@
                 <!-- slide 2 -->
                 <div class="swiper-slide">
                   <div
-                    class="testimonial__item w-full max-w-[370px] h-[340px] bg-white rounded-[30px] mx-auto p-9 flex items-center justify-center flex-col gap-[2rem]"
+                    class="testimonial__item w-full max-w-[450px] h-[340px] bg-white rounded-[30px] mx-auto p-9 flex items-center justify-center flex-col gap-[2rem]"
                   >
                     <div
                       class="flex gap-[2rem] justify-center items-center self-start"
@@ -251,7 +253,31 @@
                 <!-- slide 3 -->
                 <div class="swiper-slide">
                   <div
-                    class="testimonial__item w-full max-w-[370px] h-[340px] bg-white rounded-[30px] mx-auto p-9 flex items-center justify-center flex-col gap-[2rem]"
+                    class="testimonial__item w-full max-w-[450px] h-[340px] bg-white rounded-[30px] mx-auto p-9 flex items-center justify-center flex-col gap-[2rem]"
+                  >
+                    <div
+                      class="flex gap-[2rem] justify-center items-center self-start"
+                    >
+                      <img
+                        class="size-[5rem] rounded-[50%] overflow-hidden object-cover"
+                        src="./assets/testimonials/AI-3D-Female-Profile-Picture.jpg"
+                        alt=""
+                      />
+                      <div>
+                        <h3 class="text-black">Natasha Mith</h3>
+                        <p>Las Vegas,USA</p>
+                      </div>
+                    </div>
+                    <p class="p">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quod dolorem a dolor.
+                    </p>
+                  </div>
+                </div>
+                <!-- slide 4 -->
+                <div class="swiper-slide">
+                  <div
+                    class="testimonial__item w-full max-w-[450px] h-[340px] bg-white rounded-[30px] mx-auto p-9 flex items-center justify-center flex-col gap-[2rem]"
                   >
                     <div
                       class="flex gap-[2rem] justify-center items-center self-start"
@@ -273,7 +299,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-pagination bg-red-500 w-20 h-20"></div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
@@ -567,6 +593,7 @@
         </div>
       </footer>
     </main>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./main.js"></script>
   </body>
 </html>
