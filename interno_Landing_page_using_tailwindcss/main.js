@@ -46,6 +46,22 @@ const sr = ScrollReveal({
     delay: 600,
 });
 
+// hero section 
+sr.reveal('.hero__text', { origin: "top" });
 
-sr.reveal('.hero__text', { origin: "top" })
+// steps 
+sr.reveal('.steps__step', { origin: "top", interval: 300, });
 
+// about 
+sr.reveal('.about__text', { origin: "right", });
+sr.reveal('.about__img', { origin: "left", });
+
+
+// brands 
+sr.reveal('.brands__img img', { origin: "top", interval: 150, });
+
+
+// work 
+sr.reveal('.work__heading h2,.work__heading p', { origin: "top", interval: 500, });
+sr.reveal('.work__item__left', { origin: "right", });
+sr.reveal('.work__item__right', { origin: "left", });
